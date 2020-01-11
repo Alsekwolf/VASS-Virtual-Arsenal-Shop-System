@@ -1,7 +1,32 @@
 <p align="center">
-	<h1>VASS - Virtual Arsenal Shop System </h1><br>
-	<img src="https://steamuserimages-a.akamaihd.net/ugc/781851522412288117/E784304A9D2A187524BFC5568D8CAF673584977F/" height="200">
+	<h1>VASS - Virtual Arsenal Shop System | Edited to work with Arma 3 Epoch</h1><br>
 </p>
+
+## Instructions for EPOCH
+
+####Step 1: 
+Add the code from the `description.ext` to your `description.ext` and the code from the `init.sqf` to your `init.sqf`.
+
+####Step 2:
+Add the following to CfgFunctions (Default for epoch would be in mission file \epoch_config\Configs\CfgFunctions.hpp)
+
+```
+class TER
+{
+	class VASS
+	{
+		file = "VASS\fnc";
+		class shop {
+			preInit = 1;
+		};
+		class getItemValues {};
+		class VASShandler {};
+		class addShopCargo {};
+		class addShop {};
+		class resetTimer {};
+	};
+};
+```
 
 ## System  
 The system consists of several functions and configs which turn the Virtual Arsenal into a place where you can trade items for money and vice versa. A money system is not provided as of now. Instead you have the opportunity to implement your own one, like Ravage.<br/>

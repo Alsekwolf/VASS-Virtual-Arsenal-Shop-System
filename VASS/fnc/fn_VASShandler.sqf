@@ -28,8 +28,8 @@ switch _mode do {
 			 NUMBER - Unit's money
 		*/
 		params ["_unit"];
-		/* EXAMPLE */
-		rating _unit
+		_Crypto = EPOCH_playerCrypto;
+		_Crypto;
 	};
 	case "setMoney":{
 		/*
@@ -44,7 +44,7 @@ switch _mode do {
 			 Nothing
 		*/
 		params ["_unit", "_change"];
-		/* EXAMPLE */
-		_unit addRating _change;
+		Ayla_TakeGive = [player,_change];
+		publicVariableServer "Ayla_TakeGive";
 	};
 };
