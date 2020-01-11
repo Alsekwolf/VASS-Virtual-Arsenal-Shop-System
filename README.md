@@ -8,7 +8,7 @@
 Add the code from the `description.ext` to your `description.ext` and the code from the `init.sqf` to your `init.sqf`.
 
 ####Step 2:
-Add the following to CfgFunctions (Default for epoch would be in mission file \epoch_config\Configs\CfgFunctions.hpp)
+Add the following to CfgFunctions (Default for epoch would be in mission file `\epoch_config\Configs\CfgFunctions.hpp`)
 
 ```
 class TER
